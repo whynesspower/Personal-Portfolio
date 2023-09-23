@@ -21,5 +21,8 @@
     "react-tooltip": "^4.2.21",
     "rss-parser": "^3.12.0",
     "sass": "^1.43.2"
+  },
+  "overrides": {
+    "webpack": "^5.54.0"
   }
 }
