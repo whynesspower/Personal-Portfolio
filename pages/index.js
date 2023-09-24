@@ -114,6 +114,7 @@ export default function Home(props) {
         </section>
 
         <div className={styles.buttonContainerPower}>
+          {/* dropdown for Experience */}
           <div className={styles.parentHolder} onClick={toggleCollapse2}>
             <div className={styles.bio_link}>
               <span>
@@ -126,6 +127,8 @@ export default function Home(props) {
             </div>
           </div>
           {!isCollapsedExperience && <LeftAlignedTimeline />}
+
+          {/* Dropdown for techstack */}
           <div className={styles.parentHolder} onClick={toggleCollapse}>
             <div className={styles.bio_link}>
               <span>
@@ -243,7 +246,7 @@ export default function Home(props) {
                     LinkedIn
                   </a>
                 </div>
-                <div className={styles.subtitle}>I post once a week</div>
+                <div className={styles.subtitle}>Last post: 7 days ago</div>
               </li>
               <li>
                 <div>
@@ -252,7 +255,9 @@ export default function Home(props) {
                     Twitter
                   </a>
                 </div>
-                <div className={styles.subtitle}>{props.tweets}</div>
+                <div className={styles.subtitle}>
+                  Last 48 hours: 6 tweets{props.tweets}
+                </div>
               </li>
 
               <li>
@@ -276,7 +281,9 @@ export default function Home(props) {
                     Newsletter
                   </a>
                 </div>
-                <div className={styles.subtitle}>{props.newsletter}</div>
+                <div className={styles.subtitle}>
+                  Personal Blog{props.newsletter}
+                </div>
               </li>
               <li>
                 <div>

@@ -12,7 +12,7 @@ export default function TechStack() {
   const [selectedFilters, setSelectedFilters] = useState([
     "Data Structures and Algorithms",
   ]);
-  const [filteredItems, setFilteredItems] = useState(items);
+  const [filteredItems, setFilteredItems] = useState([]);
 
   let filters = [
     "Data Structures and Algorithms",
@@ -28,8 +28,8 @@ export default function TechStack() {
 
   const handleFilterButtonClick = (selectedCategory) => {
     if (selectedFilters.includes(selectedCategory)) {
-      let filters = selectedFilters.filter((el) => el !== selectedCategory);
-      setSelectedFilters(filters);
+      // let filters = selectedFilters.filter((el) => el !== selectedCategory);
+      // setSelectedFilters(filters);
     } else {
       setSelectedFilters([selectedCategory]);
     }
@@ -81,9 +81,16 @@ export default function TechStack() {
 
         {filteredItems.map((item, idx) => (
           <div key={`items-${idx}`} className={styles.item1}>
-            <Image src={item.img} width={500} height={500} alt="My Image" />
+            <a
+              href={item.link}
+              target="blank"
+              styles={{
+                textDecoration: "none",
+                borderBottom: "0",
+              }}
+            >
+              <Image src={item.img} width={400} height={180} alt="My Image" />
 
-            <a href={item.link} target="blank" className={styles.linkTag}>
               <p>{item.name}</p>
 
               <p className={styles.category1}>

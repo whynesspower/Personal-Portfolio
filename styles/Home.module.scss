@@ -6,6 +6,17 @@
   // align-items: center;
 }
 
+// .dropdownTransition {
+//   width: 100px;
+//   height: 100px;
+//   background: red;
+//   transition: width 2s;
+// }
+
+// .rotateIcon {
+//   width: 1000px; /* Adjust the timing and easing as needed */
+// }
+
 .intro {
   text-align: center;
 }
@@ -316,7 +327,10 @@
   flex-direction: column;
   justify-content: space-between;
 }
-
+.item1 > a {
+  text-decoration: none;
+  border-bottom: 0;
+}
 .category1 {
   color: #64748b;
   font-size: 10px;
@@ -425,6 +439,9 @@
     // min-width: 100px;
     // min-height: 80px;
   }
+  .button1 {
+    font-size: 13px;
+  }
 }
 
 /* 112em ~ 1792px : Large Desktops */
@@ -436,5 +453,8 @@
     min-width: 1601px;
     // min-width: 100px;
     // min-height: 80px;
+  }
+  .button1 {
+    font-size: 16px;
   }
 }
