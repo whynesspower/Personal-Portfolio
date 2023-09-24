@@ -9,6 +9,7 @@ import LeftAlignedTimeline from "../components/VerticalTimeline";
 import TechStack from "../components/TechStack/TechStack";
 // import ArrowDropDownCircleIcon from "@mui/icons-material/ArrowDropDownCircle";
 import ArrowDropDownCircleIcon from "@mui/icons-material/ArrowDropDown";
+import Ga from "../components/GoogleAnalytics/ga";
 export default function Home(props) {
   const [showTip, setShowTip] = useState(false);
   const [isCollapsed, setIsCollapsed] = useState(true);
@@ -27,11 +28,9 @@ export default function Home(props) {
   return (
     <div className={styles.container}>
       <Head>
+        <Ga />
         <title> whynesspower | Yashraj Shukla</title>
-        <meta
-          name="description"
-          content="Welcome to my corner of the internet"
-        />
+        <meta name="description" content="Respect the grind! | whynesspower" />
         <link
           rel="apple-touch-icon"
           sizes="57x57"
@@ -105,17 +104,6 @@ export default function Home(props) {
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
-
-        {/* <!-- Google tag (gtag.js) --> */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-7Q6P5VX977"
-        ></script>
-        <script>
-          window.dataLayer = window.dataLayer || []; function gtag()
-          {dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'G-7Q6P5VX977');
-        </script>
       </Head>
 
       <main className={styles.main}>
