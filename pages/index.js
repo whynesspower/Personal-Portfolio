@@ -105,13 +105,17 @@ export default function Home(props) {
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
+
+        {/* <!-- Google tag (gtag.js) --> */}
         <script
-          defer
-          type="text/javascript"
-          src="https://api.pirsch.io/pirsch.js"
-          id="pirschjs"
-          data-code="yojqyHBKGLOMJXGFnwWwP3IIWL7E8Ohv"
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-7Q6P5VX977"
         ></script>
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-7Q6P5VX977');
+        </script>
       </Head>
 
       <main className={styles.main}>

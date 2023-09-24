@@ -1,5 +1,12 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+Scripts if you want to deploy to linux/unix build
+"scripts": {
+"dev": "export NODE_OPTIONS=--openssl-legacy-provider && next dev -p 3919",
+"build": "export NODE_OPTIONS=--openssl-legacy-provider && next build",
+"start": "export NODE_OPTIONS=--openssl-legacy-provider && next start"
+},
+
 ## Getting Started
 
 First, run the development server:
