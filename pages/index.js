@@ -9,7 +9,7 @@ import LeftAlignedTimeline from "../components/VerticalTimeline";
 import TechStack from "../components/TechStack/TechStack";
 // import ArrowDropDownCircleIcon from "@mui/icons-material/ArrowDropDownCircle";
 import ArrowDropDownCircleIcon from "@mui/icons-material/ArrowDropDown";
-import Ga from "../components/GoogleAnalytics/ga";
+import Ga from "../components/GoogleAnalytics/Ga";
 export default function Home(props) {
   const [showTip, setShowTip] = useState(false);
   const [isCollapsed, setIsCollapsed] = useState(true);
