@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import moment from "moment";
 import ReactTooltip from "react-tooltip";
 import Head from "next/head";
+import Script from "next/script";
 import styles from "../styles/Home.module.scss";
 import SubscribeForm from "../components/SubscribeForm.js";
 import Parser from "rss-parser";
@@ -27,8 +28,23 @@ export default function Home(props) {
 
   return (
     <div className={styles.container}>
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-7Q6P5VX977`}
+      />
+
+      <Script strategy="lazyOnload">
+        {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-7Q6P5VX977', {
+                    page_path: window.location.pathname,
+                    });
+                `}
+      </Script>
       <Head>
-        <Ga />
+        {/* <Ga /> */}
         <title> whynesspower | Yashraj Shukla</title>
         <meta name="description" content="Respect the grind! | whynesspower" />
         <link
