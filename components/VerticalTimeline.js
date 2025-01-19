@@ -64,9 +64,9 @@ export default function CustomizedTimeline() {
             component="span"
             style={{ fontSize: "1rem" }}
           >
-            Electrosine Tech
+            Observe AI
           </Typography>
-          <div className={styles.subtitle}> SDE Intern</div>
+          <div className={styles.subtitle}> Software Engineer</div>
         </TimelineContent>
       </TimelineItem>
 
