@@ -76,7 +76,7 @@ export default function CustomizedTimeline() {
           variant="body2"
           color="white"
         >
-          May 2023 - Aug 2023
+          June 2024 - Present
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
@@ -91,7 +91,7 @@ export default function CustomizedTimeline() {
             variant="h6"
             component="span"
           >
-            EdYoda Labs | On-Site, Bangalore
+            Hexo.AI | Remote, San Francisco
           </Typography>
           <div className={styles.subtitle}>Summer SDE Intern</div>
         </TimelineContent>
