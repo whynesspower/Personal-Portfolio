@@ -118,7 +118,7 @@ export default function CustomizedTimeline() {
             variant="h6"
             component="span"
           >
-            Baby Steps
+            Electrosine Technologies, Remote, Halifax, Canada
           </Typography>
           <div className={styles.subtitle}>Technical Lead</div>
         </TimelineContent>
